@@ -5,7 +5,7 @@ export function Todos({todos}) {
                 <h1>{todo.title}</h1>
                 <h2>{todo.description}</h2>
                 <button onClick={() => {
-                    fetch("http://localhost:4000/completed",{
+                    fetch("https://todo-app-v1kp.onrender.com/completed",{
                         method: "PUT",
                         body: JSON.stringify({
                             id: todo._id
